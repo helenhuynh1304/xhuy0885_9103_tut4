@@ -26,21 +26,7 @@ function draw() {
   // Draw all user-created flowers
   userInput.draw();
 
-  // Instructions
-  push();
-  fill(60, 85, 65);
-  noStroke();
-  textSize(18);
-  textAlign(LEFT);
-  text("Interactive Flower Garden", 20, 35);
 
-  textSize(13);
-  text("Click: Create a flower", 20, 65);
-  text("Move mouse: Flowers sway", 20, 85);
-  text("R: Pause / resume blooming", 20, 105);
-  text("SPACE: Clear all flowers", 20, 125);
-  pop();
-}
 
 // Mouse interaction: create flowers
 function mousePressed() {
