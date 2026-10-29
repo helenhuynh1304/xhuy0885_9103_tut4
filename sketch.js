@@ -1,8 +1,4 @@
 
- // Shared main controller for Mechanics 2, 3 and 4.
- // Do not load mechanic2/sketch2.js or mechanic4/sketch4.js
- // because they contain their own setup() and draw().
-
 let rainReveal;
 let userInput;
 
@@ -23,18 +19,16 @@ function setup() {
 }
 
 function draw() {
-  // Mechanic 3: Garden background
+  // Mechanic 3: Grass background
   drawGrass();
-
-  // Mechanic 1: Audio-controlled vines
-  // Add this later.
 
   // Mechanic 4: Interactive flowers
   userInput.update();
   userInput.draw();
 
-  // Mechanic 2: Rain overlay
+  // Mechanic 2: Rain reveal
   rainReveal.drawOverlay();
+}
 
 function mousePressed() {
   return userInput.handleMousePressed();
@@ -43,5 +37,3 @@ function mousePressed() {
 function keyPressed() {
   return userInput.handleKeyPressed(key, keyCode);
 }
-
-
