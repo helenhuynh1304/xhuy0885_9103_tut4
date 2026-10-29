@@ -1,3 +1,4 @@
+
 let strokes = [];
 let strokeCount = 6000;
 
@@ -11,8 +12,7 @@ let grassColors = [
   "#658F98"
 ];
 
-function setup() {
-  createCanvas(700, 700);
+function setupGrass() {
 
   noiseSeed(18);
   randomSeed(12);
@@ -30,7 +30,7 @@ function setup() {
   }
 }
 
-function draw() {
+function drawGrass() {
   background("#47796A");
 
   let time = frameCount * 0.006;
