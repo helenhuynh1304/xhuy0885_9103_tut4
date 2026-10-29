@@ -36,7 +36,6 @@ function draw() {
   // Mechanic 2: Rain overlay
   rainReveal.drawOverlay();
 
- 
 function mousePressed() {
   return userInput.handleMousePressed();
 }
