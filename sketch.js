@@ -1,3 +1,7 @@
+ 
+ // Shared main controller for Mechanics 2, 3 and 4.
+ // Do not load mechanic2/sketch2.js or mechanic4/sketch4.js
+ // because they contain their own setup() and draw().
 
 let rainReveal;
 let userInput;
