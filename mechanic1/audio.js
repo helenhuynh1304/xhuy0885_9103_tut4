@@ -27,8 +27,8 @@ function updateAudio() {
 }
 
 // Start music when the user clicks
-function mousePressed() {
-  if (!music.isPlaying()) {
+function startGardenMusic() {
+  if (music && music.isLoaded() && !music.isPlaying()) {
     music.loop();
   }
 }
