@@ -6,7 +6,6 @@ function preload() {
   music = loadSound("mechanic1/assets/music.m4a");
 }
 
-
 // Create volume slider
 function setupAudio() {
   volumeSlider = createSlider(0, 1, 0, 0.01);
