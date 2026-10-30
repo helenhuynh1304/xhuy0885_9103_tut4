@@ -21,11 +21,11 @@ function setupGrass() {
     strokes.push({
       x: random(width),
       y: random(height),
-      length: random(4, 14),
+      length: random(4, 12),
       thickness: random(0.8, 2.5),
       colour: random(grassColors),
       phase: random(1000),
-      sway: random(2, 7)
+      sway: random(2, 5)
     });
   }
 }
@@ -55,7 +55,7 @@ function drawGrass() {
     let wind = map(
       windNoise,
       0, 1,
-      -0.7, 0.7
+      -0.6, 0.6
     );
 
     // Individual subtle movement
