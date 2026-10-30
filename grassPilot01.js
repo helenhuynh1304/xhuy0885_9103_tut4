@@ -55,7 +55,7 @@ function draw() {
     let wind = map(
       windNoise,
       0, 1,
-      -0.7, 0.7
+      -0.6, 0.6
     );
 
     // Individual subtle movement
