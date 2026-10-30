@@ -27,6 +27,7 @@ function draw() {
   userInput.draw();
 
 
+
 // Mouse interaction: create flowers
 function mousePressed() {
   return userInput.handleMousePressed();
