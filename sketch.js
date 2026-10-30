@@ -41,13 +41,15 @@ function draw() {
 }
 
 function mousePressed() {
-  // Start music when the user clicks
   startGardenMusic();
 
-  // Also plant a flower
-  return userInput.handleMousePressed();
+  if (userInput) {
+    return userInput.handleMousePressed();
+  }
 }
 
 function keyPressed() {
-  return userInput.handleKeyPressed(key, keyCode);
+  if (userInput) {
+    return userInput.handleKeyPressed(key, keyCode);
+  }
 }
