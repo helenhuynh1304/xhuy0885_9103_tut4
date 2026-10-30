@@ -1,4 +1,26 @@
-
+/*
+ * Mechanic 3: Perlin Noise & Randomness
+ * Author: Wang Jing (jwan0462)
+ *
+ * Artistic inspiration:
+ * Gustav Klimt, Bauerngarten (1907).
+ *
+ * Technical references:
+ * p5.js documentation:
+ * https://p5js.org/reference/p5/random/
+ * https://p5js.org/reference/p5/noise/
+ *
+ * AI acknowledgement:
+ * ChatGPT assisted with understanding p5.js,
+ * Randomness, Perlin Noise, and debugging.
+ * I reviewed and refined the grass animation
+ * to achieve the intended visual effect.
+ *
+ * Implementation:
+ * Randomness creates varied grass strokes.
+ * Perlin Noise creates smooth wind-like movement.
+ */
+  
 let strokes = [];
 let strokeCount = 6000;
 
