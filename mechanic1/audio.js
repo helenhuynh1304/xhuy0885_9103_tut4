@@ -3,7 +3,7 @@ let volumeSlider;
 
 // Load music
 function preload() {
-  music = loadSound("assets/music.mp3");
+music = loadSound("mechanic1/assets/music.mp3");
 }
 
 
