@@ -43,10 +43,15 @@ function draw() {
 }
 
 function mousePressed() {
-  startGardenMusic(); /// Mechanic 1: Start music
 
-  if (userInput) {
-    return userInput.handleMousePressed(); // Mechanic 4: Plant flower
+  if (mouseX >= 0 && mouseX < width &&
+      mouseY >= 0 && mouseY < height) {
+
+    startGardenMusic();
+
+    if (userInput) {
+      userInput.handleMousePressed();
+    }
   }
 }
 
