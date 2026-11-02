@@ -33,8 +33,8 @@ function draw() {
   let volume = getVolume();
 
   updateAudio();
-  updateAudioVines(volume);
-  drawAudioVines();
+  updateVines(volume);
+  drawVines();
 
   // Mechanic 4: Interactive flowers
   userInput.update();
