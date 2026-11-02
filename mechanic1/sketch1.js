@@ -1,95 +1,66 @@
 
-let grass = [];
-const MAX_GRASS = 300;
-let canva;
+let vines = [];
+const MAX_VINES = 300;
 
-function setup() {
-  let canvasW = windowWidth * 0.5;
-  let canvasH = windowHeight * 0.5;
+// Update vine growth based on the volume slider
+function updateVines(volume) {
+  let targetAmount = floor(map(volume, 0, 1, 0, MAX_VINES));
 
-  canva = createCanvas(canvasW, canvasH);
-
-  centerCanvas();
-  setupAudio();
-}
-
-
-function centerCanvas() {
-  canva.position(0, 0);
-}
-
-//create the grass
-function draw() {
-  background(230);
-
-  let volume = getVolume();
-
-  updateAudio();
-  updateGrass(volume);
-  drawGrass();
-
-  fill(0);
-  noStroke();
-  textSize(16);
-
-}
-
-
-
- // Adjust the number of vines according to the volume
-function updateGrass(volume) {
-  let targetAmount = floor(map(volume, 0, 1, 0, MAX_GRASS));
-
-  while (grass.length < targetAmount) {
-    grass.push(createGrass());
+  while (vines.length < targetAmount) {
+    vines.push(createVine());
   }
 
-  // Grow or shrink the vines
-  for (let i = 0; i < grass.length; i++) {
+  for (let i = 0; i < vines.length; i++) {
     if (i < targetAmount) {
-      grass[i].growth += 0.01;
+      vines[i].growth += 0.01;
 
-      if (grass[i].growth > 1) {
-        grass[i].growth = 1;
+      if (vines[i].growth > 1) {
+        vines[i].growth = 1;
       }
     } else {
-      grass[i].growth -= 0.02;
+      vines[i].growth -= 0.02;
 
-      if (grass[i].growth < 0) {
-        grass[i].growth = 0;
+      if (vines[i].growth < 0) {
+        vines[i].growth = 0;
       }
     }
   }
 
-  // Remove vines that have disappeared
-  for (let i = grass.length - 1; i >= 0; i--) {
-    if (grass[i].growth == 0) {
-      grass.splice(i, 1);
+  // Remove vines that have shrunk completely
+  for (let i = vines.length - 1; i >= 0; i--) {
+    if (vines[i].growth == 0) {
+      vines.splice(i, 1);
     }
   }
 }
 
-
-//
-// Create vines in an upright triangular distribution
-function createGrass() {
+// Create an individual vine
+function createVine() {
   let progress = pow(random(), 0.55);
+
   let y = lerp(height * 0.12, height, progress);
-  let x = width / 2 + random(-width * 0.45 * progress, width * 0.45 * progress);
+
+  let x = width / 2 + random(
+    -width * 0.45 * progress,
+    width * 0.45 * progress
+  );
 
   return {
     x: x,
     y: y,
-    height: random(lerp(12, 45, progress), lerp(28, 145, progress)),
+    height: random(
+      lerp(12, 45, progress),
+      lerp(28, 145, progress)
+    ),
     curl: random(0.2, 0.35),
     phase: random(TWO_PI),
     growth: 0
   };
 }
 
-// Draw the growing vines
-function drawGrass() {
-  for (let g of grass) {
+// Draw all vines
+function drawVines() {
+  for (let g of vines) {
     push();
     translate(g.x, g.y);
 
