@@ -45,10 +45,10 @@ function draw() {
 }
 
 function mousePressed() {
-  startGardenMusic();
+  startGardenMusic(); /// Mechanic 1: Start music
 
   if (userInput) {
-    return userInput.handleMousePressed();
+    return userInput.handleMousePressed(); // Mechanic 4: Plant flower
   }
 }
 
