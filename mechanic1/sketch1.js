@@ -64,7 +64,7 @@ function drawVines() {
     push();
     translate(g.x, g.y);
 
-    stroke(150, 160, 60);
+    stroke(214, 234, 209);
     strokeWeight(2);
     noFill();
 
