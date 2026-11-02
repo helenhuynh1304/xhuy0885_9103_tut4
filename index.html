@@ -3,27 +3,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Interactive Garden</title>
+
   <link rel="stylesheet" href="style.css">
 
+  <!-- p5.js libraries -->
   <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
 </head>
+
 <body>
   <main></main>
 
   <!-- Mechanic 1: Audio vines -->
-  <!-- Add the script path when available -->
+  <script src="mechanic1/audio.js"></script>
+  <script src="mechanic1/vines.js"></script>
 
-  <!-- Mechanic 2: Rain -->
+  <!-- Mechanic 2: Rain reveal -->
   <script src="mechanic2/rain-reveal.js"></script>
 
   <!-- Mechanic 3: Grass -->
   <script src="mechanic3/grassPilot01.js"></script>
 
-  <!-- Mechanic 4: Flowers -->
+  <!-- Mechanic 4: Interactive flowers -->
   <script src="mechanic4/input-controls.js"></script>
 
- 
+  <!-- Main controller -->
   <script src="sketch.js"></script>
 </body>
 </html>
