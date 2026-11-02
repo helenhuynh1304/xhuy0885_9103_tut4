@@ -9,9 +9,6 @@ music = loadSound("mechanic1/assets/music.mp3");
 // Create volume slider
 function setupAudio() {
   volumeSlider = createSlider(0, 1, 0, 0.01);
-
-  volumeSlider.position(10, height + 40);
-  volumeSlider.style("width", "200px");
 }
 
 
