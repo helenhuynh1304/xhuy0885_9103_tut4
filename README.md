@@ -40,7 +40,15 @@ The separate mechanics are integrated through the main `sketch.js` file.
 ## Mechanic Ownership
 
 ### Mechanic 1 — Audio-Controlled Vines
+**Team member:** Yulu Ma(yuma1056)
 
+My mechanic uses an audio slider to control the growth of vines in the garden. Users can adjust the slider to change the number of vines, making the garden appear more or less dense.
+
+The mechanic works as follows:
+- At the beginning, the audio volume is set to zero, so no additional vines grow.
+- When users increase the volume, the number of vines gradually increases.
+- When users decrease the volume, the number of vines also decreases.
+- However, the slider cannot activate the mechanic directly. Users must first click on the canvas to activate the interaction through the Click Mechanic. After that, they can use the audio slider to control the vines' growth.
 ### Mechanic 2 — Rain Reveal
 
 **Team member:** Helen Huynh (xhuy0885)
