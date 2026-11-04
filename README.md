@@ -49,6 +49,10 @@ The mechanic works as follows:
 - When users increase the volume, the number of vines gradually increases.
 - When users decrease the volume, the number of vines also decreases.
 - However, the slider cannot activate the mechanic directly. Users must first click on the canvas to activate the interaction through the Click Mechanic. After that, they can use the audio slider to control the vines' growth.
+
+The mechanic is implemented in two files:
+- Audio.js: Controls the background audio and creates the volume slider, allowing users to adjust the audio volume.
+- Sketch1.js: Contains the vine data and controls the creation, growth and display of the vines. It includes functions such as createWave(), updateWings() and drawWings() to generate, update and draw the vines.
 ### Mechanic 2 — Rain Reveal
 
 **Team member:** Helen Huynh (xhuy0885)
