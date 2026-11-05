@@ -109,11 +109,12 @@ For Mechanic 2, AI assistance helped develop and refine the rain animation and t
 ## Interaction Instructions
 
 1. Open the interactive garden: https://helenhuynh1304.github.io/xhuy0885_9103_tut4/
-2. Wait for the rain animation to begin and the garden to gradually appear.
-3. Click inside the garden to plant flowers and start the music.
-4. Move the mouse near flowers to observe their movement.
-5. Adjust the volume slider to change the music volume and influence vine growth.
-6. Press R to pause or resume blooming, and Space to clear flowers.
+2. The website may display "Loading..." for a few seconds before the interactive artwork appears. Please wait briefly for the artwork to load. Once loading is complete, the garden will appear and users can interact with it normally.
+3. Wait for the rain animation to begin and the garden to gradually appear.
+4. Click inside the garden to plant flowers and start the music.
+5. Move the mouse near flowers to observe their movement.
+6. Adjust the volume slider to change the music volume and influence vine growth.
+7. Press R to pause or resume blooming, and Space to clear flowers.
 
 ## Project Structure
 
