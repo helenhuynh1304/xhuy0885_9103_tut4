@@ -73,6 +73,21 @@ This mechanic supports the project's inspiration from Gustav Klimt's *Bauerngart
 ### Mechanic 3 — Grass Background
 
 ### Mechanic 4 — User Interaction and Flowers
+Team Member: Yini Chen (yche0155)
+Interaction Mechanism: User Input
+
+This interactive mechanism allows viewers to actively shape the appearance of the garden by planting flowers and influencing their behavior. Clicking within the canvas generates a flower at the chosen location, with its size and color assigned randomly.
+
+The mechanism functions as follows:
+- Flower Generation: Mouse clicks determine the placement of flowers, giving users control over the garden’s composition and density.
+- Visual Diversity: Randomly assigned sizes and colors create a rich variety within a cohesive floral theme.
+- Gentle Animation: The flower stems sway subtly from side to side, imbuing the garden with life and vitality.
+- Mouse Responsiveness: As the cursor approaches a flower, the amplitude of its swaying increases. This immediate visual feedback encourages viewers to further explore the garden.
+
+The interactive logic links "mouse clicks" to "flower generation" and correlates "mouse position" with "swaying amplitude." While randomness introduces visual richness, user input serves as the primary driving force behind the entire interactive experience.
+
+The mechanism is inspired by the colorful, densely packed flowers in Gustav Klimt's Bauerngarten (1907). It empowers viewers to construct their own floral compositions, transforming the experience from the passive observation of a static image into an active creative process. The randomized appearance minimizes repetition, while the contrast between the gentle background motion and the more pronounced swaying triggered by the mouse makes the viewer’s impact on the garden clearly visible.
+Incorporated alongside elements such as rainfall, patches of grass, and vines, this mechanism introduces direct user participation into the interactive garden, tightly weaving together its visual composition and dynamic responsiveness.
 
 ## AI Acknowledgement
 
