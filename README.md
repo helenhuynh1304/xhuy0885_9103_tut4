@@ -76,18 +76,20 @@ This mechanic supports the project's inspiration from Gustav Klimt's *Bauerngart
 Team Member: Yini Chen (yche0155)
 Interaction Mechanism: User Input
 
-This interactive mechanism allows viewers to actively shape the appearance of the garden by planting flowers and influencing their behavior. Clicking within the canvas generates a flower at the chosen location, with its size and color assigned randomly.
+My mechanic allows viewers to plant flowers and influence their movement, actively shaping the garden's composition.
 
-The mechanism functions as follows:
-- Flower Generation: Mouse clicks determine the placement of flowers, giving users control over the garden’s composition and density.
-- Visual Diversity: Randomly assigned sizes and colors create a rich variety within a cohesive floral theme.
-- Gentle Animation: The flower stems sway subtly from side to side, imbuing the garden with life and vitality.
-- Mouse Responsiveness: As the cursor approaches a flower, the amplitude of its swaying increases. This immediate visual feedback encourages viewers to further explore the garden.
+The mechanic works as follows:
 
-The interactive logic links "mouse clicks" to "flower generation" and correlates "mouse position" with "swaying amplitude." While randomness introduces visual richness, user input serves as the primary driving force behind the entire interactive experience.
+- Clicking inside the canvas creates a gradually blooming flower with a random size and one of five colours: pink, red, blue, purple or orange.
+- Flower stems sway gently. Moving the mouse closer increases their swaying amplitude, providing immediate visual feedback.
+- Pressing R pauses or resumes flower growth while swaying continues. Pressing Space clears all user-created flowers.
 
-The mechanism is inspired by the colorful, densely packed flowers in Gustav Klimt's Bauerngarten (1907). It empowers viewers to construct their own floral compositions, transforming the experience from the passive observation of a static image into an active creative process. The randomized appearance minimizes repetition, while the contrast between the gentle background motion and the more pronounced swaying triggered by the mouse makes the viewer’s impact on the garden clearly visible.
-Incorporated alongside elements such as rainfall, patches of grass, and vines, this mechanism introduces direct user participation into the interactive garden, tightly weaving together its visual composition and dynamic responsiveness.
+The mechanic is organised into two files:
+
+- mechanic4/input-controls.js: Defines the UserInputMechanic class. addFlower() creates flowers; updateFlower() controls growth and uses dist(), sin() and lerp() for proximity-responsive, smoothly changing swaying; drawFlower() renders each flower using scaling and rotation. Input handlers process mouse clicks and keyboard controls.
+- mechanic4/sketch4.js: Provides a standalone sketch that creates the canvas, initialises the mechanic, updates and draws flowers each frame, and forwards mouse and keyboard events to the class.
+
+Inspired by the colourful, densely arranged flowers in  Gustav Klimt's Bauerngarten (1907), this mechanic lets viewers build their own floral composition. Randomised sizes and colours introduce variety, while stronger swaying near the mouse makes the viewer's influence visible. Together with the rain, grass and vines, it contributes direct participation to the team's interactive garden.
 
 ## AI Acknowledgement
 
