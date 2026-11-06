@@ -71,7 +71,22 @@ The `drawOverlay()` method is called from the main `sketch.js` after the garden 
 This mechanic supports the project's inspiration from Gustav Klimt's *Bauerngarten* by gradually revealing the colourful garden.
 
 ### Mechanic 3 — Grass Background
+Team member: Wang Jing (jwan0462)
 
+My mechanic creates an animated grass background inspired by Gustav Klimt’s Bauerngarten (1907). It uses thousands of small, coloured brushstrokes to recreate the painting’s dense vegetation and layered textures. The grass moves gently to make the garden feel more natural and alive.
+
+At the beginning, 6,000 grass strokes are generated using the random() function. Each stroke has a different position, length, thickness, colour, and movement value. This creates a rich and varied texture instead of a repetitive pattern.
+
+The animation uses noise() to create smooth, continuous movement. A spatial Perlin Noise field controls the general direction of the grass, while noise values changing over time create a gentle wind effect. Each stroke also has small individual movements, making the animation look more organic.
+
+The mechanic is implemented in mechanic3/grassPilot01.js using two main functions:
+
+* setupGrass(): Generates the grass strokes and their random properties.
+* drawGrass(): Uses Perlin Noise to update the movement and draw the grass on the canvas.
+
+The main sketch.js calls these functions to integrate the grass with the other mechanics.
+
+This mechanic supports the project’s artistic inspiration by translating Klimt’s layered vegetation and expressive brushstrokes into a moving digital background. It provides a natural environment for the interactive flowers and other visual elements.
 ### Mechanic 4 — User Interaction and Flowers
 Team Member: Yini Chen (yche0155)
 Interaction Mechanism: User Input
