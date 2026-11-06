@@ -7,6 +7,18 @@ Our team's interactive garden was inspired by *Bauerngarten* (1907), a painting 
 
 We wanted to transform Klimt's still painting into an interactive digital experience using p5.js. By introducing animation, rainfall, sound and user interaction, our project explores how the garden can come to life and respond to the viewer.
 
+## Design Decisions and Changes from Our Preliminary Concept
+
+During development, our team made several design decisions to improve visual balance, avoid overlapping mechanics and create a more cohesive interactive experience.
+
+* **Mechanic 2 – Time-Based Animation:** We replaced the original concept of flowers blooming every 2 seconds with a rain reveal animation. This allowed Mechanic 2 to focus on gradually introducing the garden, while Mechanic 4 remained responsible for flower interactions.
+
+* **Mechanic 3 – Perlin Noise Background:** We changed the background from multiple colours to grass-like green tones. This reduced visual competition with the colourful flowers and created a clearer distinction between the background and foreground.
+
+* **Mechanic 1 – Audio-Controlled Vines:** We changed the vines to white so they would stand out against the green background without making the artwork too visually crowded.
+
+Overall, these design decisions gave each mechanic a distinct purpose while maintaining the organic atmosphere, layered composition and colour harmony inspired by Gustav Klimt's *Bauerngarten* (1907).
+
 ## Techniques
 
 Our team used **p5.js** to transform Gustav Klimt's *Bauerngarten* (1907) into an interactive garden. We combined animation, sound, rainfall, grass and user interaction to bring the artwork to life.
